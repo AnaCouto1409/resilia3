@@ -42,3 +42,40 @@ nav a {
     font-size: 5rem;
     color: crimson;
 }
+.pet{
+    width: 100vw;
+}
+.bt {
+    text-align: center;
+    font-family: Helvetica, sans-serif; 
+    font-weight: 1rem; 
+    color: #FFCC00;
+    background: #000000; 
+    padding: 18px;
+    position: relative;
+    bottom: 6px;
+    margin: auto;
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+.bt:hover {
+    background: #FF7519;
+    font-size: 3rem;
+}
+
+.rodape{
+    width: 100vw; 
+    height: 80px; 
+    background: #0a0a0af6; 
+}
+
+.copyright {
+    text-align: center; 
+    color: #ff0e0e;
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif; 
+    font-weight: bolder; 
+    padding: 20px;
+
+}
