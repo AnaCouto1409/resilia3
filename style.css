@@ -1,0 +1,44 @@
+header{
+    background-color: #74459b;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10 px 0;
+}
+.caixa{
+    position: relative;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+}
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: 5px;
+    letter-spacing: 5px;
+}
+nav{
+    position: absolute;
+    top:0;
+    right: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 1.6rem;
+}
+nav li{
+    display: inline-block;
+    margin: 5 5 5 5px;
+}
+nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgb(252, 248, 248);
+}
+.caixa:first-letter{
+    color: crimson;
+    font-size: 5rem;
+}
+.caixa:hover{
+    font-size: 5rem;
+    color: crimson;
+}
