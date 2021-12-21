@@ -65,7 +65,9 @@ nav a {
 
 .bt:hover {
     background: #FF7519;
+    transition: 5s ;
     font-size: 3rem;
+    cursor: pointer;
 }
 
 .rodape{
@@ -83,3 +85,4 @@ nav a {
     padding: 20px;
 
 }
+@media (width:1280px)
