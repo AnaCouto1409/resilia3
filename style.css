@@ -1,4 +1,5 @@
 header{
+
     background-color: #74459b;
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -11,11 +12,12 @@ header{
     word-spacing: 30px;
 }
 h1{
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bolder;
     margin-left: 5px;
     letter-spacing: 5px;
+    width: 100vw;
 }
 nav{
     position: absolute;
@@ -44,10 +46,7 @@ nav a {
 }
 .pet{
     width: 100vw;
-}
-.titulofotos{
-    font-size: 1rem;
-    color: #74459b;
+    opacity: 1;
 }
 .bt {
     text-align: center;
@@ -65,11 +64,35 @@ nav a {
 
 .bt:hover {
     background: #FF7519;
-    transition: 5s ;
     font-size: 3rem;
-    cursor: pointer;
+    transition: 1s all;
+    transform: rotate(70s) scale(1.2);
 }
+.input-passa{
+    display: block;
+    margin: 5 5 20;
+    padding: 25px 20x;
+    width: 50%;
+    box-sizing: border-box 3px solid purple;
+    background-color: #74459b;
+    color: rgb(250, 243, 243);
+}
+.input-passa:hover{
+    color:#74459b;
 
+}
+.table{
+    margin: 20px 0 40px;
+}
+.thead, tbody{
+    background-color: azure;
+    font-weight: bolder;
+    color: black;
+}
+th, th{
+    border: 3px solid black;
+    padding: 8px 15px;
+}
 .rodape{
     width: 100vw; 
     height: 80px; 
@@ -78,11 +101,15 @@ nav a {
 
 .copyright {
     text-align: center; 
-    color: #FFCC00;
+    color: #ff0e0e;
     font-size: 2rem;
     font-family: Helvetica, sans-serif; 
     font-weight: bolder; 
     padding: 20px;
 
 }
-@media (width:1280px)
+@media screen and (max-width:480px){
+    header,footer {
+        width: auto;
+    }
+}
