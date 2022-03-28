@@ -1,115 +1,109 @@
+@font-face {
+    font-family: 2rem;
+    src: url(wall.perlok.png);
+}
+body{
+    background-color: darkolivegreen;
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat; /* overflow-y:hidden
+    overflow-x : hidden;  */
+}
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.opcoesNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
+}
+.opcoesNav img{
+    width: 100px;
+    filter: invert(77%) saturate(26%) hue-rotate(158deg) brightness(208%) contrast(190%);
+}
+header a{
+    padding-right: 1em;
+    text-decoration-line: none;
+    color: #ffffff;
+    transition: 0.9s ease-in-out;
+}
+header a :hover{
+    cursor: pointer
+    filter: invert(77%) saturate(26%) hue-rotate(158deg) brightness(208) contrast(190%);
+}
+.equipe{
+    width:  120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    filter: invert(22%) saturate (26%) hue-rotate(78deg) brightness(58%) contrast(19%);
+}
 
-    background-color: #74459b;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 10 px 0;
-}
-.caixa{
-    position: relative;
-    margin: 0 auto;
-    letter-spacing: 5px;
-    word-spacing: 30px;
-}
-h1{
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-left: 5px;
-    letter-spacing: 5px;
-    width: 100vw;
-}
-nav{
-    position: absolute;
-    top:0;
-    right: 10px;
-    display: inline-block;
-    color: white;
-    font-size: 1.6rem;
-}
-nav li{
-    display: inline-block;
-    margin: 5 5 5 5px;
-}
-nav a {
-    display: inline-block;
-    text-transform: uppercase;
-    color: rgb(252, 248, 248);
-}
-.caixa:first-letter{
-    color: crimson;
-    font-size: 5rem;
-}
-.caixa:hover{
-    font-size: 5rem;
-    color: crimson;
-}
-.pet{
-    width: 100vw;
-    opacity: 1;
-}
-.bt {
+section.principal{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    font-family: Helvetica, sans-serif; 
-    font-weight: 1rem; 
-    color: #FFCC00;
-    background: #000000; 
-    padding: 18px;
-    position: relative;
-    bottom: 6px;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    color: #ffffff;
+    width: 100%;
+    line-height: 20px;
+}
+.principal a button{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: -o-linear-gradient(to right, #010102 0%, hsl(34, 74%, 40%) 31%, #0000 100%);
+    padding: 12 px 20 px;
+    transition:  0.5s;
+    background-size:  200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 18px 0 18px 0;
+    cursor: pointer;
+}
+.principal h1{
+    font-size: 5rem;
+    text-shadow: 2px 2px ,3px rgba(0,0,0,1);
+}
+.section sobre{
+    color: #ffffff;
+    width: 80%;
+    text-align: center;
     margin: auto;
-    border-radius: 10px; 
-    cursor: pointer; 
+}
+.sobre h1{
+    margin-top: 80%;
+    font-size: 3 rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 30px;
+}
+sobre p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.9rem;
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 25px;
 }
 
-.bt:hover {
-    background: #FF7519;
-    font-size: 3rem;
-    transition: 1s all;
-    transform: rotate(70s) scale(1.2);
+footer{/* rodape da pagina */
+    margin-top: 80px;
+    color:#ffffff;
+    text-align: center;
 }
-.input-passa{
-    display: block;
-    margin: 5 5 20;
-    padding: 25px 20x;
-    width: 50%;
-    box-sizing: border-box 3px solid purple;
-    background-color: #74459b;
-    color: rgb(250, 243, 243);
-}
-.input-passa:hover{
-    color:#74459b;
-
-}
-.table{
-    margin: 20px 0 40px;
-}
-.thead, tbody{
-    background-color: azure;
-    font-weight: bolder;
-    color: black;
-}
-th, th{
-    border: 3px solid black;
-    padding: 8px 15px;
-}
-.rodape{
-    width: 100vw; 
-    height: 80px; 
-    background: #0a0a0af6; 
-}
-
-.copyright {
-    text-align: center; 
-    color: #ff0e0e;
-    font-size: 2rem;
-    font-family: Helvetica, sans-serif; 
-    font-weight: bolder; 
-    padding: 20px;
-
-}
-@media screen and (max-width:480px){
-    header,footer {
-        width: auto;
-    }
+footer h2{
+    padding: 40px 0;
+    font-size:  1.5rem;
 }
